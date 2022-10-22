@@ -8,7 +8,7 @@ class script(object):
 
     ABOUT_TXT = """╭•━━━━━━━━━━━━━━━➣ 
 ║┣⪼❈ <b>𝙼𝚈 𝙽𝙰𝙼𝙴: {}</b>
-║┣⪼❈ <b>𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/AlshanTg>ᗩꜰʀᴀꜱʜ †ꁅ</a></b>
+║┣⪼❈ <b>𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/AlshanTg>ᗩʟꜱʜᴀɴ †ꁅ</a></b>
 ║┣⪼❈ <b>𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼</b>
 ║┣⪼❈ <b>𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹</b>
 ║┣⪼❈ <b>𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱</b>
@@ -20,8 +20,8 @@ class script(object):
 ✯ <b>𝚂𝚘𝚞𝚛𝚌𝚎 𝙲𝚘𝚍𝚎 𝚒𝚜 𝚘𝚙𝚎𝚗 𝚜𝚘𝚞𝚛𝚌𝚎..</b>
 ✯ <b>𝚂𝚘𝚞𝚛𝚌𝚎 - <a href=https://github.com/MrMKN/PROFESSOR-BOT>𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a></b>
 <b>★𝐃𝐄𝐕𝐒★</b>
-✯ <b><a href=https://t.me/AlshanTg>ᗩꜰʀᴀꜱʜ †ꁅ</a></b>
-✯ <b><a href=https://t.me/afrashtg>ᗩꜰʀᴀꜱʜ †ꁅ</a></b>"""
+✯ <b><a href=https://t.me/AlshanTg>ᗩʟꜱʜᴀɴ †ꁅ</a></b>
+✯ <b><a href=https://t.me/afrashtg>ᗩʟꜱʜᴀɴ †ꁅ</a></b>"""
  
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 - 𝙵𝙸𝙻𝚃𝙴𝚁 𝙸𝚂 𝚃𝙷𝙴 𝙵𝙴𝙰𝚃𝚄𝚁𝙴 𝚆𝙴𝚁𝙴 𝚄𝚂𝙴𝚁𝚂 𝙲𝙰𝙽 𝚂𝙴𝚃 𝙰𝚄𝚃𝙾𝙼𝙰𝚃𝙴𝙳 𝚁𝙴𝙿𝙻𝙸𝙴𝚂 𝙵𝙾𝚁 𝙰 𝙿𝙰𝚁𝚃𝙸𝙲𝚄𝙻𝙰𝚁 𝙺𝙴𝚈𝚆𝙾𝚁𝙳 𝙰𝙽𝙳 POOJA 𝙱𝙾𝚃 𝚆𝙸𝙻𝙻 𝚁𝙴𝚂𝙿𝙾𝙽𝙳 𝚆𝙷𝙴𝙽𝙴𝚅𝙴𝚁 𝙰 𝙺𝙴𝚈𝚆𝙾𝚁𝙳 𝙸𝚂 𝙵𝙾𝚄𝙽𝙳 𝚃𝙷𝙴 𝙼𝙴𝚂𝚂𝙰𝙶𝙴
