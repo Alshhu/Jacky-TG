@@ -89,6 +89,6 @@ Heroku Account Status
         f"{quota_details}"
         f"{disk}",
         quote=True,
-        enums.ParseMode.MARKDOWN
+        parse_mode=enums.ParseMode.MARKDOWN
     )
 
