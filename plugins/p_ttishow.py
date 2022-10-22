@@ -1,11 +1,12 @@
 from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
-from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, MELCOW_NEW_USERS
+from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, MELCOW_NEW_USERS, WELCOME_PICS
 from database.users_chats_db import db
 from database.ia_filterdb import Media
 from utils import get_size, temp, get_settings
 from Script import script
+import random
 from pyrogram.errors import ChatAdminRequired
 
 """-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
@@ -37,9 +38,11 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-            InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 Updates', url='https://t.me/TeamEvamaria')
-        ]]
+           InlineKeyboardButton('❣ 𝙷𝙴𝙻𝙿 ❣', url=f"https://t.me/{temp.U_NAME}?start=help"),
+           InlineKeyboardButton('💠 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 💠', url='https://t.me/+yvxJ0OnUUDs3NzRl')
+           ],[           
+           InlineKeyboardButton('🤴🏻 𝙱𝙾𝚃 𝙾𝚆𝙽𝙴𝚁 🤴🏻', url='https://t.me/moviesclubowne')
+           ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
             text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
@@ -53,7 +56,16 @@ async def save_group(bot, message):
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>")
+                W_Btn = [[
+                     InlineKeyboardButton('❣ 𝙷𝙴𝙻𝙿 ❣', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                     InlineKeyboardButton('💠 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 💠', url='https://t.me/+yvxJ0OnUUDs3NzRl')
+                     ],[           
+                     InlineKeyboardButton('🤴🏻 𝙱𝙾𝚃 𝙾𝚆𝙽𝙴𝚁 🤴🏻', url='https://t.me/moviesclubowne')
+                ]] 
+                if WELCOME_PICS:
+                    temp.MELCOW['welcome'] = await message.reply_photo(photo=random.choice(WELCOME_PICS), script.WELCOME_TXT(u=u.mention, g=message.chat.title), reply_markup=InlineKeyboardMarkup(W_Btn), parse_mode=enums.ParseMode.HTML, reply_to_message_id=u.id)                  
+                else:
+                    temp.MELCOW['welcome'] = await message.reply_text(text=script.WELCOME_TXT(u=u.mention, g=message.chat.title), reply_markup=InlineKeyboardMarkup(W_Btn), parse_mode=enums.ParseMode.HTML, disable_web_page_preview=True, reply_to_message_id=u.id)                  
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
@@ -152,7 +164,7 @@ async def get_ststs(bot, message):
 
 # a function for trespassing into others groups, Inspired by a Vazha
 # Not to be used , But Just to showcase his vazhatharam.
-# @Client.on_message(filters.command('invite') & filters.user(ADMINS))
+@Client.on_message(filters.command('invite') & filters.user(ADMINS))
 async def gen_invite(bot, message):
     if len(message.command) == 1:
         return await message.reply('Give me a chat id')
