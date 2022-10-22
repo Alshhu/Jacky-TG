@@ -82,8 +82,13 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
-
     btn.insert(0, 
+        [
+            InlineKeyboardButton(f'🎬<b>{search}</b>🎬', 'dupe')
+        ]
+    )
+
+    btn.insert(1, 
         [
             InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
             InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
@@ -107,6 +112,10 @@ async def next_page(bot, query):
             [
              InlineKeyboardButton("❄️ 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 ❄️", url=f"https://t.me/{temp.U_NAME}")]
         )
+        btn.append(
+            [
+             InlineKeyboardButton("📥 𝙷𝙾𝚆 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 📥", callback_data="howdl")]
+        )
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"×ᴘᴀɢᴇs {round(int(offset) / 6) + 1} / {round(total / 6)}×", callback_data="pages"),
@@ -114,6 +123,10 @@ async def next_page(bot, query):
         btn.append(   
             [
              InlineKeyboardButton("❄️ 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 ❄️", url=f"https://t.me/{temp.U_NAME}")]
+        )
+        btn.append(
+            [
+             InlineKeyboardButton("📥 𝙷𝙾𝚆 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 📥", callback_data="howdl")]
         )
     else:
         btn.append(
@@ -126,6 +139,10 @@ async def next_page(bot, query):
                [
                 InlineKeyboardButton("❄️ 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 ❄️", url=f"https://t.me/{temp.U_NAME}")
             ],
+        )
+        btn.append(
+            [
+             InlineKeyboardButton("📥 𝙷𝙾𝚆 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 📥", callback_data="howdl")]
         )
     try:
         await query.edit_message_reply_markup(
@@ -438,7 +455,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ], [
             InlineKeyboardButton('📯 𝙶𝚁𝙾𝚄𝙿 📯', url='https://t.me/http_movieshubhere')
         ], [
-            InlineKeyboardButton('👑 𝙱𝙾𝚃 𝙾𝚆𝙽𝙴𝚁', url='https://t.me/afrashtg'),
+            InlineKeyboardButton('👑 𝙱𝙾𝚃 𝙾𝚆𝙽𝙴𝚁', url='https://t.me/AlshanTg'),
             InlineKeyboardButton('📺 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/httpmovieshub_here'),
         ],
            [
@@ -818,8 +835,12 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
- 
     btn.insert(0, 
+        [
+            InlineKeyboardButton(f'🎬<b>{search}</b>🎬', 'dupe')
+        ]
+    ) 
+    btn.insert(1, 
         [
             InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
             InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
@@ -839,6 +860,11 @@ async def auto_filter(client, msg, spoll=False):
             [
              InlineKeyboardButton("❄️ 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 ❄️", url=f"https://t.me/{temp.U_NAME}")]
         )
+        
+        btn.append(
+            [
+             InlineKeyboardButton("📥 𝙷𝙾𝚆 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 📥", callback_data="howdl")]
+        )
     else:
         btn.append(
             [InlineKeyboardButton(text="×ᴘᴀɢᴇs 1/1×", callback_data="pages")]
@@ -846,6 +872,11 @@ async def auto_filter(client, msg, spoll=False):
         btn.append(
             [
              InlineKeyboardButton("❄️ 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 ❄️", url=f"https://t.me/{temp.U_NAME}")]
+        )
+        
+        btn.append(
+            [
+             InlineKeyboardButton("📥 𝙷𝙾𝚆 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 📥", callback_data="howdl")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
