@@ -105,7 +105,7 @@ async def next_page(bot, query):
         )
         btn.append(
             [
-             InlineKeyboardButton("❄️ 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 ❄️", url=f"https://t.me/iverbonelessfilter_bot")]
+             InlineKeyboardButton("❄️ 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 ❄️", url=f"https://t.me/{temp.U_NAME}")]
         )
     elif off_set is None:
         btn.append(
@@ -837,7 +837,7 @@ async def auto_filter(client, msg, spoll=False):
         )
         btn.append(
             [
-             InlineKeyboardButton("❄️ 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 ❄️", url=f"https://t.me/{temp.U_NAME}}")]
+             InlineKeyboardButton("❄️ 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 ❄️", url=f"https://t.me/{temp.U_NAME}")]
         )
     else:
         btn.append(
