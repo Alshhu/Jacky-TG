@@ -449,7 +449,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴍᴏɴᴇʏ ʜᴇɪsᴛ S01E01\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)\n\n©️ ᴄɪɴᴇᴍᴀʟᴀ.ᴄᴏᴍ", show_alert=True)
 
     elif query.data == "howdl":
-        await query.answer("✯ <b>Step 1:</b> sᴇɴᴅ ᴛʜᴇ ɴᴀᴍᴇ ᴏғ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴡɪᴛʜ ᴄᴏʀʀᴇᴄᴛ sᴘᴇʟʟɪɴɢ\n\n✯ <b>Step 2:</b> ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴏғ ᴛʜᴇ ᴍᴏᴠɪᴇ ʏᴏᴜ ᴡᴀɴᴛ  \n\n✯ <b>Step 3:</b> ᴛʜᴇɴ ᴄʟɪᴄᴋ '𝚂𝚃𝙰𝚁𝚃' ᴏɴ ᴛʜᴇ ʙᴏᴛ ᴀɴᴅ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ᴍᴏᴠɪᴇ", show_alert=True)
+        await query.answer("✯ 𝗦𝘁𝗲𝗽 𝟭: sᴇɴᴅ ᴛʜᴇ ɴᴀᴍᴇ ᴏғ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴡɪᴛʜ ᴄᴏʀʀᴇᴄᴛ sᴘᴇʟʟɪɴɢ\n\n✯ 𝗦𝘁𝗲𝗽 𝟮: ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴏғ ᴛʜᴇ ᴍᴏᴠɪᴇ ʏᴏᴜ ᴡᴀɴᴛ  \n\n✯ 𝗦𝘁𝗲𝗽 𝟯: ᴛʜᴇɴ ᴄʟɪᴄᴋ '𝚂𝚃𝙰𝚁𝚃' ᴏɴ ᴛʜᴇ ʙᴏᴛ ᴀɴᴅ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ᴍᴏᴠɪᴇ", show_alert=True)
 
     elif query.data == "start":
         buttons = [[
