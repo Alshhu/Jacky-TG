@@ -84,15 +84,14 @@ async def next_page(bot, query):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🎬<b>{search}</b>🎬', 'dupe')
+            InlineKeyboardButton(f'🎬 {search} 🎬', 'dupe')
         ]
     )
 
     btn.insert(1, 
-        [
-            InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-            InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-            InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+        [            
+            InlineKeyboardButton(f'📟 ᴍᴏᴠɪᴇ 📟', 'minfo'),
+            InlineKeyboardButton(f'🕹 ꜱᴇʀɪᴇꜱ 🕹', 'sinfo')
         ]
     )
 
@@ -450,13 +449,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴍᴏɴᴇʏ ʜᴇɪsᴛ S01E01\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)\n\n©️ ᴄɪɴᴇᴍᴀʟᴀ.ᴄᴏᴍ", show_alert=True)
 
     elif query.data == "howdl":
-        await query.answer("✯ <b>Step 1</b> sᴇɴᴅ ᴛʜᴇ ɴᴀᴍᴇ ᴏғ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴡɪᴛʜ ᴄᴏʀʀᴇᴄᴛ sᴘᴇʟʟɪɴɢ
-
-ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴏғ ᴛʜᴇ ᴍᴏᴠɪᴇ ʏᴏᴜ ᴡᴀɴᴛ  
-
-ᴛʜᴇɴ ᴄʟɪᴄᴋ '𝚂𝚃𝙰𝚁𝚃' ᴏɴ ᴛʜᴇ ʙᴏᴛ ᴀɴᴅ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ᴍᴏᴠɪᴇ 
-     
-                             𝙴𝙽𝙹𝙾𝚈", show_alert=True)
+        await query.answer("✯ <b>Step 1:</b> sᴇɴᴅ ᴛʜᴇ ɴᴀᴍᴇ ᴏғ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴡɪᴛʜ ᴄᴏʀʀᴇᴄᴛ sᴘᴇʟʟɪɴɢ\n\n✯ <b>Step 2:</b> ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴏғ ᴛʜᴇ ᴍᴏᴠɪᴇ ʏᴏᴜ ᴡᴀɴᴛ  \n\n✯ <b>Step 3:</b> ᴛʜᴇɴ ᴄʟɪᴄᴋ '𝚂𝚃𝙰𝚁𝚃' ᴏɴ ᴛʜᴇ ʙᴏᴛ ᴀɴᴅ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ᴍᴏᴠɪᴇ", show_alert=True)
 
     elif query.data == "start":
         buttons = [[
@@ -846,14 +839,13 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🎬<b>{search}</b>🎬', 'dupe')
+            InlineKeyboardButton(f'🎬 {search} 🎬', 'dupe')
         ]
     ) 
     btn.insert(1, 
         [
-            InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-            InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-            InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+            InlineKeyboardButton(f'📟 ᴍᴏᴠɪᴇ 📟', 'minfo'),
+            InlineKeyboardButton(f'🕹 ꜱᴇʀɪᴇꜱ 🕹', 'sinfo')
         ]
     )
 
