@@ -46,7 +46,7 @@ async def start(client, message):
         ], [
             InlineKeyboardButton('📯 𝙶𝚁𝙾𝚄𝙿 📯', url='https://t.me/http_movieshubhere')
         ], [
-            InlineKeyboardButton('👑 𝙱𝙾𝚃 𝙾𝚆𝙽𝙴𝚁', url='https://t.me/afrashtg'),
+            InlineKeyboardButton('👑 𝙱𝙾𝚃 𝙾𝚆𝙽𝙴𝚁', url='https://t.me/AlshanTg'),
             InlineKeyboardButton('📺 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/httpmovieshub_here'),
         ],
            [
@@ -97,7 +97,7 @@ async def start(client, message):
         ], [
             InlineKeyboardButton('📯 𝙶𝚁𝙾𝚄𝙿 📯', url='https://t.me/http_movieshubhere')
         ], [
-            InlineKeyboardButton('👑 𝙱𝙾𝚃 𝙾𝚆𝙽𝙴𝚁', url='https://t.me/afrashtg'),
+            InlineKeyboardButton('👑 𝙱𝙾𝚃 𝙾𝚆𝙽𝙴𝚁', url='https://t.me/AlshanTg'),
             InlineKeyboardButton('📺 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/httpmovieshub_here'),
         ],
            [
