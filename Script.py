@@ -8,7 +8,7 @@ class script(object):
 
     ABOUT_TXT = """╭•━━━━━━━━━━━━━━━➣ 
 ║┣⪼❈ <b>𝙼𝚈 𝙽𝙰𝙼𝙴: {}</b>
-║┣⪼❈ <b>𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/afrashtg>ᗩꜰʀᴀꜱʜ †ꁅ</a></b>
+║┣⪼❈ <b>𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/AlshanTg>ᗩꜰʀᴀꜱʜ †ꁅ</a></b>
 ║┣⪼❈ <b>𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼</b>
 ║┣⪼❈ <b>𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹</b>
 ║┣⪼❈ <b>𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱</b>
@@ -20,7 +20,7 @@ class script(object):
 ✯ <b>𝚂𝚘𝚞𝚛𝚌𝚎 𝙲𝚘𝚍𝚎 𝚒𝚜 𝚘𝚙𝚎𝚗 𝚜𝚘𝚞𝚛𝚌𝚎..</b>
 ✯ <b>𝚂𝚘𝚞𝚛𝚌𝚎 - <a href=https://github.com/MrMKN/PROFESSOR-BOT>𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a></b>
 <b>★𝐃𝐄𝐕𝐒★</b>
-✯ <b><a href=https://t.me/afrashtg>ᗩꜰʀᴀꜱʜ †ꁅ</a></b>
+✯ <b><a href=https://t.me/AlshanTg>ᗩꜰʀᴀꜱʜ †ꁅ</a></b>
 ✯ <b><a href=https://t.me/afrashtg>ᗩꜰʀᴀꜱʜ †ꁅ</a></b>"""
  
     MANUELFILTER_TXT = """Help: <b>Filters</b>
