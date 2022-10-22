@@ -39,9 +39,9 @@ async def save_group(bot, message):
             return
         buttons = [[
            InlineKeyboardButton('❣ 𝙷𝙴𝙻𝙿 ❣', url=f"https://t.me/{temp.U_NAME}?start=help"),
-           InlineKeyboardButton('💠 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 💠', url='https://t.me/+yvxJ0OnUUDs3NzRl')
+           InlineKeyboardButton('💠 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 💠', url='https://t.me/httpmovieshub_here')
            ],[           
-           InlineKeyboardButton('🤴🏻 𝙱𝙾𝚃 𝙾𝚆𝙽𝙴𝚁 🤴🏻', url='https://t.me/moviesclubowne')
+           InlineKeyboardButton('🤴🏻 𝙱𝙾𝚃 𝙾𝚆𝙽𝙴𝚁 🤴🏻', url='https://t.me/afrashtg')
            ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -58,9 +58,9 @@ async def save_group(bot, message):
                         pass
                 W_Btn = [[
                      InlineKeyboardButton('❣ 𝙷𝙴𝙻𝙿 ❣', url=f"https://t.me/{temp.U_NAME}?start=help"),
-                     InlineKeyboardButton('💠 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 💠', url='https://t.me/+yvxJ0OnUUDs3NzRl')
+                     InlineKeyboardButton('💠 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 💠', url='https://t.me/httpmovieshub_here')
                      ],[           
-                     InlineKeyboardButton('🤴🏻 𝙱𝙾𝚃 𝙾𝚆𝙽𝙴𝚁 🤴🏻', url='https://t.me/moviesclubowne')
+                     InlineKeyboardButton('🤴🏻 𝙱𝙾𝚃 𝙾𝚆𝙽𝙴𝚁 🤴🏻', url='https://t.me/afrashtg')
                 ]] 
                 if WELCOME_PICS:
                     temp.MELCOW['welcome'] = await message.reply_photo(photo=random.choice(WELCOME_PICS), script.WELCOME_TXT(u=u.mention, g=message.chat.title), reply_markup=InlineKeyboardMarkup(W_Btn), parse_mode=enums.ParseMode.HTML, reply_to_message_id=u.id)                  
