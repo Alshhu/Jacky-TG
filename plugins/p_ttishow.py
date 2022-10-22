@@ -63,9 +63,9 @@ async def save_group(bot, message):
                      InlineKeyboardButton('🤴🏻 𝙱𝙾𝚃 𝙾𝚆𝙽𝙴𝚁 🤴🏻', url='https://t.me/afrashtg')
                 ]] 
                 if WELCOME_PICS:
-                    temp.MELCOW['welcome'] = await message.reply_photo(photo=random.choice(WELCOME_PICS), caption=script.WELCOME_TXT(u=u.mention, g=message.chat.title), reply_markup=InlineKeyboardMarkup(w_btn), parse_mode=enums.ParseMode.HTML, reply_to_message_id=u.id)                  
+                    temp.MELCOW['welcome'] = await message.reply_photo(photo=random.choice(WELCOME_PICS), caption=script.WELCOME_TXT(u=u.mention, g=message.chat.title), reply_markup=InlineKeyboardMarkup(w_btn), parse_mode=enums.ParseMode.HTML)                  
                 else:
-                    temp.MELCOW['welcome'] = await message.reply_text(text=script.WELCOME_TXT(u=u.mention, g=message.chat.title), reply_markup=InlineKeyboardMarkup(w_btn), parse_mode=enums.ParseMode.HTML, disable_web_page_preview=True, reply_to_message_id=u.id)                  
+                    temp.MELCOW['welcome'] = await message.reply_text(text=script.WELCOME_TXT(u=u.mention, g=message.chat.title), reply_markup=InlineKeyboardMarkup(w_btn), parse_mode=enums.ParseMode.HTML, disable_web_page_preview=True)                  
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
