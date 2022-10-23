@@ -466,48 +466,35 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ], [
             InlineKeyboardButton('🔎 𝚂𝙴𝙰𝚁𝙲𝙷 𝙷𝙴𝚁𝙴 🔎', switch_inline_query_current_chat='')
         ]]
-        reply1 = await query.message.reply_text(
+        a = await query.message.edit_text(
             text="▰▱▱▱▱▱▱▱▱▱ 10%"
         )
         await asyncio.sleep(0.1)
-        reply2 = await reply1.edit_text(
+        b = await a.edit_text(
             text="▰▰▱▱▱▱▱▱▱▱ 20%"
         )
+        
         await asyncio.sleep(0.1)
-        reply3 = await reply2.edit_text(
-            text="▰▰▰▱▱▱▱▱▱▱ 30%"
-        )
-        await asyncio.sleep(0.1)
-        reply4 = await reply3.edit_text(
+        c = await b.edit_text(
             text="▰▰▰▰▱▱▱▱▱▱ 40%"
         )
+        
         await asyncio.sleep(0.1)
-        reply5 = await reply4.edit_text(
-            text="▰▰▰▰▰▱▱▱▱▱ 50%"
-        )
-        await asyncio.sleep(0.1)
-        reply6 = await reply5.edit_text(
+        d = await c.edit_text(
             text="▰▰▰▰▰▰▱▱▱▱ 60%"
         )
+        
         await asyncio.sleep(0.1)
-        reply7 = await reply6.edit_text(
-            text="▰▰▰▰▰▰▰▱▱▱ 70%"
-        )
-        await asyncio.sleep(0.1)
-        reply8 = await reply7.edit_text(
+        e = await d.edit_text(
             text="▰▰▰▰▰▰▰▰▱▱ 80%"
         )
+        
         await asyncio.sleep(0.1)
-        reply9 = await reply8.edit_text(
-            text="▰▰▰▰▰▰▰▰▰▱ 90%"
-        )
-        await asyncio.sleep(0.1)
-        reply10 = await reply9.edit_text(
+        f = await e.edit_text(
             text="▰▰▰▰▰▰▰▰▰▰ 100%"
         )        
-        await reply10.delete()
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
+        await f.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -525,48 +512,35 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('✾ 𝙷𝙾𝙼𝙴 ✾', callback_data='start'),
             InlineKeyboardButton('✾ 𝚂𝚃𝙰𝚃𝚄𝚂 ✾', callback_data='stats')
         ]]
-        reply1 = await query.message.reply_text(
+        a = await query.message.edit_text(
             text="▰▱▱▱▱▱▱▱▱▱ 10%"
         )
         await asyncio.sleep(0.1)
-        reply2 = await reply1.edit_text(
+        b = await a.edit_text(
             text="▰▰▱▱▱▱▱▱▱▱ 20%"
         )
+        
         await asyncio.sleep(0.1)
-        reply3 = await reply2.edit_text(
-            text="▰▰▰▱▱▱▱▱▱▱ 30%"
-        )
-        await asyncio.sleep(0.1)
-        reply4 = await reply3.edit_text(
+        c = await b.edit_text(
             text="▰▰▰▰▱▱▱▱▱▱ 40%"
         )
+        
         await asyncio.sleep(0.1)
-        reply5 = await reply4.edit_text(
-            text="▰▰▰▰▰▱▱▱▱▱ 50%"
-        )
-        await asyncio.sleep(0.1)
-        reply6 = await reply5.edit_text(
+        d = await c.edit_text(
             text="▰▰▰▰▰▰▱▱▱▱ 60%"
         )
+        
         await asyncio.sleep(0.1)
-        reply7 = await reply6.edit_text(
-            text="▰▰▰▰▰▰▰▱▱▱ 70%"
-        )
-        await asyncio.sleep(0.1)
-        reply8 = await reply7.edit_text(
+        e = await d.edit_text(
             text="▰▰▰▰▰▰▰▰▱▱ 80%"
         )
+        
         await asyncio.sleep(0.1)
-        reply9 = await reply8.edit_text(
-            text="▰▰▰▰▰▰▰▰▰▱ 90%"
-        )
-        await asyncio.sleep(0.1)
-        reply10 = await reply9.edit_text(
+        f = await e.edit_text(
             text="▰▰▰▰▰▰▰▰▰▰ 100%"
         )        
-        await reply10.delete()
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
+        await f.edit_text(
             text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -579,48 +553,35 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('✾ 𝙷𝙾𝙼𝙴 ✾', callback_data='start'),
             InlineKeyboardButton('❀ 𝙲𝙻𝙾𝚂𝙴 ❀', callback_data='close_data')
         ]]
-        reply1 = await query.message.reply_text(
+        a = await query.message.edit_text(
             text="▰▱▱▱▱▱▱▱▱▱ 10%"
         )
         await asyncio.sleep(0.1)
-        reply2 = await reply1.edit_text(
+        b = await a.edit_text(
             text="▰▰▱▱▱▱▱▱▱▱ 20%"
         )
+        
         await asyncio.sleep(0.1)
-        reply3 = await reply2.edit_text(
-            text="▰▰▰▱▱▱▱▱▱▱ 30%"
-        )
-        await asyncio.sleep(0.1)
-        reply4 = await reply3.edit_text(
+        c = await b.edit_text(
             text="▰▰▰▰▱▱▱▱▱▱ 40%"
         )
+        
         await asyncio.sleep(0.1)
-        reply5 = await reply4.edit_text(
-            text="▰▰▰▰▰▱▱▱▱▱ 50%"
-        )
-        await asyncio.sleep(0.1)
-        reply6 = await reply5.edit_text(
+        d = await c.edit_text(
             text="▰▰▰▰▰▰▱▱▱▱ 60%"
         )
+        
         await asyncio.sleep(0.1)
-        reply7 = await reply6.edit_text(
-            text="▰▰▰▰▰▰▰▱▱▱ 70%"
-        )
-        await asyncio.sleep(0.1)
-        reply8 = await reply7.edit_text(
+        e = await d.edit_text(
             text="▰▰▰▰▰▰▰▰▱▱ 80%"
         )
+        
         await asyncio.sleep(0.1)
-        reply9 = await reply8.edit_text(
-            text="▰▰▰▰▰▰▰▰▰▱ 90%"
-        )
-        await asyncio.sleep(0.1)
-        reply10 = await reply9.edit_text(
+        f = await e.edit_text(
             text="▰▰▰▰▰▰▰▰▰▰ 100%"
-        )
-        await reply10.delete()
+        )        
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
+        await f.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
