@@ -61,9 +61,11 @@ async def save_group(bot, message):
                      InlineKeyboardButton('💠 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 💠', url='https://t.me/httpmovieshub_here')
                      ],[           
                      InlineKeyboardButton('🤴🏻 𝙱𝙾𝚃 𝙾𝚆𝙽𝙴𝚁 🤴🏻', url='https://t.me/afrashtg')
-                ]]                
-                temp.MELCOW['welcome'] = await message.reply_photo(photo=random.choice(WELCOME_PICS), caption=script.WELCOME_TXT(u=u.mention, g=message.chat.title), reply_markup=InlineKeyboardMarkup(w_btn), parse_mode=enums.ParseMode.HTML, reply_to_message_id=u.id)                  
-                #temp.MELCOW['welcome'] = await message.reply_text(text=script.WELCOME_TXT(u=u.mention, g=message.chat.title), reply_markup=InlineKeyboardMarkup(w_btn), parse_mode=enums.ParseMode.HTML, disable_web_page_preview=True, reply_to_message_id=u.id)                  
+                ]]  
+                if WELCOME_PICS:           
+                    temp.MELCOW['welcome'] = await message.reply_photo((random.choice(WELCOME_PICS), script.WELCOME_TXT(u=u.mention, g=message.chat.title)), reply_markup=InlineKeyboardMarkup(w_btn), parse_mode=enums.ParseMode.HTML, reply_to_message_id=u.id)                  
+                else:
+                    temp.MELCOW['welcome'] = await message.reply_text(script.WELCOME_TXT(u=u.mention, g=message.chat.title), reply_markup=InlineKeyboardMarkup(w_btn), parse_mode=enums.ParseMode.HTML, disable_web_page_preview=True, reply_to_message_id=u.id)                  
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
