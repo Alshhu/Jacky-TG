@@ -769,7 +769,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"❖[{get_size(file.file_size)}]❖ {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"❖[{get_size(file.file_size)}]❖ {file.file_name}", url=f"https://du-link.in/st?api=3bcced1a6163b1382ee16f9ae7ba3f6689100ac7&url=https://telegram.dog/{temp.U_NAME}?start=pre_{file.file_id}"
                 ),
             ]
             for file in files
