@@ -1,4 +1,4 @@
-# Kanged From @TroJa
+# Kanged From @TroJ
 import asyncio
 import re
 import ast
