@@ -1,4 +1,4 @@
-# Kanged From @Tr
+# Kanged From @T
 import asyncio
 import re
 import ast
