@@ -2,19 +2,7 @@
     "name": "EvaMariaBot",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "stack": "container",
-    "keywords": [
-      "telegram",
-      "auto-filter",
-      "filter",
-      "best",
-      "indian",
-      "pyrogram",
-      "media",
-      "search",
-      "channel",
-      "index",
-      "inline"
-    ],
+    "keywords": ["telegram", "bot"]
     "website": "https://github.com/EvamariaTG/EvaMaria",
     "repository": "https://github.com/EvamariaTG/EvaMaria",
     "env": {
@@ -60,6 +48,25 @@
         },
         "DATABASE_NAME": {
             "description": "Name of the database in mongoDB. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
+            "required": false
+        },
+        "WELCOME_PICS": {
+            "description": "group welcome message photo",
+            "required": false
+        },
+        "FILTER_DELETE_TIME": {
+            "description": "search result autodelete time is second",
+            "value": "900",
+            "required": false
+        },
+        "CUSTOM_FILE_CAPTION": {
+            "description": "custom file caption",
+            "value": "{file_name}\n\n🔘 size - {file_size}\n\n╔═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗\n♻️ 𝙅𝙊𝙄𝙉 :- @ \n♻️ 𝙅𝙊𝙄𝙉 :- @ \n╚═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝ ",
+            "required": false
+        },
+        "IMDB_TEMPLATE": {
+            "description": "imdb template",
+            "value": "🎪 <b>ᴛɪᴛʟᴇ</b>: <b><a href={url}>{title}</a></b>\n🔖 <b>ɪɴꜰᴏ</b>: <b>{runtime}ᴍɪɴ | {release_date}</b>\n\n🌟 <b>ʀᴀᴛɪɴɢ</b>: <b><a href={url}/ratings>{rating}</a> /10</b>\n🎭 <b>ɢᴇɴʀᴇꜱ</b>: <b>{genres}</b>\n🎙 <b>ʟᴀɴɢ</b>: <b><code>{languages}</code></b>\n\n❣ <b>ᴩᴏᴡᴇʀᴇᴅ ʙy</b>: <b><a href=https://t.me/http_movieshubhere>ᴄɪɴᴇᴍᴀʟᴀ.ᴄᴏᴍ</a></b>",
             "required": false
         },
         "COLLECTION_NAME": {
