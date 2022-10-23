@@ -17,8 +17,6 @@ class script(object):
 ╰•━━━━━━━━━━━━━━━➣"""
 
     SOURCE_TXT = """<b>NOTE:</b>
-✯ <b>𝚂𝚘𝚞𝚛𝚌𝚎 𝙲𝚘𝚍𝚎 𝚒𝚜 𝚘𝚙𝚎𝚗 𝚜𝚘𝚞𝚛𝚌𝚎..</b>
-✯ <b>𝚂𝚘𝚞𝚛𝚌𝚎 - <a href=https://github.com/MrMKN/PROFESSOR-BOT>𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a></b>
 <b>★𝐃𝐄𝐕𝐒★</b>
 ✯ <b><a href=https://t.me/AlshanTg>ᗩʟꜱʜᴀɴ †ꁅ</a></b>
 ✯ <b><a href=https://t.me/afrashtg>ᗩʟꜱʜᴀɴ †ꁅ</a></b>"""
