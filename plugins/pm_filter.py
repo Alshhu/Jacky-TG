@@ -103,45 +103,35 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("⇜ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"×ᴘᴀɢᴇs {round(int(offset) / 10) + 1} / {round(total / 10)}×",
+            [InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data=f"next_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"𝙿𝙰𝙶𝙴𝚂 {round(int(offset) / 10) + 1} / {round(total / 10)}",
                                   callback_data="pages")]
         )
+        
         btn.append(
             [
-             InlineKeyboardButton("❄️ 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 ❄️", url=f"https://t.me/{temp.U_NAME}")]
-        )
-        btn.append(
-            [
-             InlineKeyboardButton("📥 𝙷𝙾𝚆 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 📥", callback_data="howdl")]
+             InlineKeyboardButton("🔮 𝙷𝙾𝚆 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 🔮", callback_data="howdl")]
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton(f"×ᴘᴀɢᴇs {round(int(offset) / 6) + 1} / {round(total / 6)}×", callback_data="pages"),
-             InlineKeyboardButton("ɴᴇxᴛ⇝", callback_data=f"next_{req}_{key}_{n_offset}")])
-        btn.append(   
-            [
-             InlineKeyboardButton("❄️ 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 ❄️", url=f"https://t.me/{temp.U_NAME}")]
-        )
+            [InlineKeyboardButton(f"𝙿𝙰𝙶𝙴𝚂 {round(int(offset) / 6) + 1} / {round(total / 6)}", callback_data="pages"),
+             InlineKeyboardButton("𝙽𝙴𝚇𝚃", callback_data=f"next_{req}_{key}_{n_offset}")])
+        
         btn.append(
             [
-             InlineKeyboardButton("📥 𝙷𝙾𝚆 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 📥", callback_data="howdl")]
+             InlineKeyboardButton("🔮 𝙷𝙾𝚆 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 🔮", callback_data="howdl")]
         )
     else:
         btn.append(
             [
-                InlineKeyboardButton("⇜ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"×ᴘᴀɢᴇs {round(int(offset) / 10) + 1} / {round(total / 10)}×", callback_data="pages"),
-                InlineKeyboardButton("ɴᴇxᴛ⇝", callback_data=f"next_{req}_{key}_{n_offset}")]
+                InlineKeyboardButton("𝙱𝙰𝙲𝙺", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton(f"𝙿𝙰𝙶𝙴𝚂 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
+                InlineKeyboardButton("𝙽𝙴𝚇𝚃", callback_data=f"next_{req}_{key}_{n_offset}")]
         )
-        btn.append(
-               [
-                InlineKeyboardButton("❄️ 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 ❄️", url=f"https://t.me/{temp.U_NAME}")
-            ],
-        )
+        
         btn.append(
             [
-             InlineKeyboardButton("📥 𝙷𝙾𝚆 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 📥", callback_data="howdl")]
+             InlineKeyboardButton("🔮 𝙷𝙾𝚆 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 🔮", callback_data="howdl")]
         )
     try:
         await query.edit_message_reply_markup(
@@ -815,30 +805,21 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"×ᴘᴀɢᴇs 1/{round(int(total_results) / 10)}×", callback_data="pages"),
-             InlineKeyboardButton(text="ɴᴇxᴛ⇝", callback_data=f"next_{req}_{key}_{offset}")]
-        )
-        btn.append(
-            [
-             InlineKeyboardButton("❄️ 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 ❄️", url=f"https://t.me/{temp.U_NAME}")]
+            [InlineKeyboardButton(text=f"𝙿𝙰𝙶𝙴𝚂 1/{round(int(total_results) / 10)}", callback_data="pages"),
+             InlineKeyboardButton(text="𝙽𝙴𝚇𝚃", callback_data=f"next_{req}_{key}_{offset}")]
         )
         
         btn.append(
             [
-             InlineKeyboardButton("📥 𝙷𝙾𝚆 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 📥", callback_data="howdl")]
+             InlineKeyboardButton("🔮 𝙷𝙾𝚆 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 🔮", callback_data="howdl")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="×ᴘᴀɢᴇs 1/1×", callback_data="pages")]
-        )
+            [InlineKeyboardButton(text="𝙿𝙰𝙶𝙴𝚂 1/1", callback_data="pages")]
+        )               
         btn.append(
             [
-             InlineKeyboardButton("❄️ 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 ❄️", url=f"https://t.me/{temp.U_NAME}")]
-        )
-        
-        btn.append(
-            [
-             InlineKeyboardButton("📥 𝙷𝙾𝚆 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 📥", callback_data="howdl")]
+             InlineKeyboardButton("🔮 𝙷𝙾𝚆 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 🔮", callback_data="howdl")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
